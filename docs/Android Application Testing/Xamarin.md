@@ -9,7 +9,7 @@ apktool b com.vulnapp.apk
 
 
 ## Traffic Interception
-## One technique to rule them all
+### One technique to rule them all
 > AVD does not utilise the built in proxy settings of Android Devices, it utilises some magic under the hood to proxy traffic. **Works on non-proxy aware applications**
 1. Set up an Pixel 3a XL android emulated device (needs to have SDK < 29). 
 2. Use Android Studio Virtual Device Manager with the following command line args.
@@ -26,10 +26,10 @@ C:\Users\Karim\AppData\Local\Android\Sdk\emulator\emulator.exe -avd 'Pixel_3a_XL
 ```
 
 ### Intercept Traffic using tooling
-Use [ProxyDroid – Apps on Google Play](https://play.google.com/store/apps/details?id=org.proxydroid&hl=en_GB&gl=US) and Burp NoPE
-[Intercepting Non-HTTP Request Using Burp Suite + Extension (NoPE Proxy) | by #Ujan | Medium](https://medium.com/@juan.tirtayana/intercepting-non-http-request-using-burp-suite-extension-8c264b3c41d1)
+- Use [ProxyDroid – Apps on Google Play](https://play.google.com/store/apps/details?id=org.proxydroid&hl=en_GB&gl=US) and Burp NoPE
+- [Intercepting Non-HTTP Request Using Burp Suite + Extension (NoPE Proxy) | by #Ujan | Medium](https://medium.com/@juan.tirtayana/intercepting-non-http-request-using-burp-suite-extension-8c264b3c41d1)
 ### SSL Unpinning
-[GoSecure/frida-xamarin-unpin: A Frida script to bypass Xamarin certificate pinning implementations (github.com)](https://github.com/GoSecure/frida-xamarin-unpin)
+- [GoSecure/frida-xamarin-unpin: A Frida script to bypass Xamarin certificate pinning implementations (github.com)](https://github.com/GoSecure/frida-xamarin-unpin)
 
 ## Resources
 - [Intercepting Xamarin Mobile App Traffic (triskelelabs.com)](https://www.triskelelabs.com/blog/intercepting-xamarin-mobile-app-traffic-2)
@@ -37,3 +37,4 @@ Use [ProxyDroid – Apps on Google Play](https://play.google.com/store/apps/deta
 - [Invisible proxying - PortSwigger](https://portswigger.net/burp/documentation/desktop/tools/proxy/invisible)
 - [GitHub - helviojunior/xamarin_sslunpinning](https://github.com/helviojunior/xamarin_sslunpinning)
 - [GitHub - GoSecure/frida-xamarin-unpin: A Frida script to bypass Xamarin certificate pinning implementations](https://github.com/GoSecure/frida-xamarin-unpin)
+- [How To Capture Non-Proxy Aware Mobile Application Traffic (IOS & Android) Xamarin/Flutter -Pentesting | by salman syed | Medium](https://slmnsd552.medium.com/how-to-capture-non-proxy-aware-mobile-application-traffic-ios-android-xamarin-flutter-924fe044facf)
