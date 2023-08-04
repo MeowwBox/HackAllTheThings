@@ -32,7 +32,7 @@ iptables -t nat -A PREROUTING -i tun0 -p tcp --dport 443 -j REDIRECT --to-port 8
 # or to forward to a remtoe host
 iptables -t nat -A PREROUTING -p tcp --dport 443 -s <mobile_ip> -j DNAT --to-destination <burp_host_ip>:<burp_listenting_port>
 
-iptables -t nat -A POSTROUTING -p tcp --dport 8888 -d 10.8.0.1 -j SNAT --to-source 10.8.0.1
+iptables -t nat -A POSTROUTING -p tcp --dport <burp_listenting_port> -d <burp_host_ip> -j SNAT --to-source <burp_host_ip>
 ```
 3. Enable IP Forwarding
 ```bash
