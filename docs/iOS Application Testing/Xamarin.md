@@ -6,6 +6,8 @@
 - [SSL Pinning Bypass for Android & iPhone Users | Appknox](https://www.appknox.com/blog/bypass-ssl-pinning-in-ios-app)
 The following is outdated, but I opted to keep it in the notes for reference:
 - [How To Capture Non-Proxy Aware Mobile Application Traffic (IOS & Android) Xamarin/Flutter -Pentesting | by salman syed | Medium](https://slmnsd552.medium.com/how-to-capture-non-proxy-aware-mobile-application-traffic-ios-android-xamarin-flutter-924fe044facf)
+More on IP tables at:
+- [iptables Demystified - Port Redirection and Forwarding HTTP Traffic to another machine (part 1) - YouTube](https://www.youtube.com/watch?v=NAdJojxENEU)
 ### Steps
 Follow the steps in the [How To Capture Non-Proxy Aware Mobile Application Traffic (IOS & Android) Xamarin/Flutter -Pentesting | by salman syed | Medium](https://slmnsd552.medium.com/how-to-capture-non-proxy-aware-mobile-application-traffic-ios-android-xamarin-flutter-924fe044facf) blog to set up OpenVPN.
 1. Delete all `iptable` rules, refer to [iptables(8) - Linux man page (die.net)](https://linux.die.net/man/8/iptables) for full context.
