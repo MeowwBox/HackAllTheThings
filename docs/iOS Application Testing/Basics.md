@@ -1,8 +1,8 @@
 # Basics
 ```bash
 # SSH to device
-# Default creds are root:alpine and mobile:alpine
-ssh root@192.168.178.94 
+# mobile user password is set when you first install Sileo
+ssh mobile@192.168.178.94 
 
 # Transfer files from Phone to desktop
 scp root@localhost:/tmp/hi.txt .
@@ -23,8 +23,7 @@ ldid -S DVIA-v2.app
 3. Inside an SSH shell `appinst /var/root/<application_name>.ipa`
 
 **Alternatively,**
-Use [Sideloadly - iOS & Apple Silicon Sideloading](https://sideloadly.io/)
-
+- Use [Sideloadly - iOS & Apple Silicon Sideloading](https://sideloadly.io/)
 
 ## Get Device UDID
 1.  Open up the latest version of [**iTunes**](http://www.apple.com/itunes/) and **connect your iOS device to your computer.**
@@ -34,4 +33,18 @@ Use [Sideloadly - iOS & Apple Silicon Sideloading](https://sideloadly.io/)
 	![](/Screenshots/Pasted%20image%2020230113102610.png)
 
 ## Signed ipsws
-[Download iOS Firmware for iPhone, iPad, iPod Touch, Apple Watch, Apple TV and HomePod / IPSW Downloads](https://ipsw.me/)
+- [Download iOS Firmware for iPhone, iPad, iPod Touch, Apple Watch, Apple TV and HomePod / IPSW Downloads](https://ipsw.me/)
+
+## Restart the SpringBoard from SSH
+```bash
+ssh root@192.168.114.153
+
+killall -9 SpringBoard
+
+# Not always needed, test the previous command first
+reboot
+```
+
+## Install Old Versions of iOS App
+- [AppStore++ Download for iOS (onejailbreak.com)](https://onejailbreak.com/blog/appstoreplusplus/)
+

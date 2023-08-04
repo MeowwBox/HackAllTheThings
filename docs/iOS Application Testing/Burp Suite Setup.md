@@ -7,6 +7,7 @@ Or you can manually follow the next steps:
 * Access `http://burp` and download the certificate
 * Access _**Setting**_ --> _**Profile Downloaded**_ and **Install** it (you will be asked your code)
 * Access _**Settings**_ --> _**General**_ --> _**About**_ --> _**Certificate Trust Settings**_ and enable PortSwigger CA
+![](/Screenshots/Pasted%20image%2020230804150922.png)
 
 Configure burp to listen on all interface.
 
