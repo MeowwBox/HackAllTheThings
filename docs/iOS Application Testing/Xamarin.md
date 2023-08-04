@@ -13,10 +13,10 @@ Follow the steps in the [How To Capture Non-Proxy Aware Mobile Application Traff
 # Flush filter rules i.e: FOWARD, INPUT, OUTPUT
 iptables -F
 
-# Get NAT rule number
+# [optional] Get NAT rule number
 sudo iptables -t nat -v -L -n --line-number
 
-# Flush nat rule i.e: PREROUTING, POSTROUTING
+# [optional] Flush nat rule i.e: PREROUTING, POSTROUTING
 sudo iptables -t nat -D PREROUTING <rule_number>
 
 # Allow all inbound traffic
@@ -29,10 +29,13 @@ sudo iptables -P FORWARD ACCEPT
 # To forward to local port 8888 
 iptables -t nat -A PREROUTING -i tun0 -p tcp --dport 443 -j REDIRECT --to-port 8888 
 
-# or to forward to a remtoe host
+# ----- or to forward to a remte host -------
 iptables -t nat -A PREROUTING -p tcp --dport 443 -s <mobile_ip> -j DNAT --to-destination <burp_host_ip>:<burp_listenting_port>
 
 iptables -t nat -A POSTROUTING -p tcp --dport <burp_listenting_port> -d <burp_host_ip> -j SNAT --to-source <burp_host_ip>
+
+# [optional] if you delete OpenVPN's NATing rule by accident, restore it with
+sudo iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o ens33 -j MASQUERADE # , where ens33 is the interface connected to the internet
 ```
 3. Enable IP Forwarding
 ```bash
