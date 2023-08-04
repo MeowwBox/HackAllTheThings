@@ -27,7 +27,7 @@ sudo iptables -P FORWARD ACCEPT
 2. Route traffic from your VPN interface and redirect to your host (Burp Suite)
 ```bash
 # To forward to local port 8888 
-iptables -t nat -A PREROUTING -i tun0 -p tcp --dport 443 -j REDIRECT --to-port 8888
+iptables -t nat -A PREROUTING -i tun0 -p tcp --dport 443 -j REDIRECT --to-port 8888 
 
 # or to forward to a remtoe host
 iptables -t nat -A PREROUTING -p tcp --dport 443 -s <mobile_ip> -j DNAT --to-destination <burp_host_ip>:<burp_listenting_port>
@@ -44,7 +44,6 @@ cat /proc/sys/net/ipv4/ip_forward
 ```
 > If you don't see traffic in Burp, checkout Burp's Dashboard - sometimes it's an SSL pinning issue.
 > ![](/Screenshots/Pasted%20image%2020230803164141.png)
-
 
 ### Bypass SSL pinning
 - Login to the application without intercepting the traffic
