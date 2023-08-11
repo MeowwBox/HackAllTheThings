@@ -9,8 +9,9 @@ The following is outdated, but I opted to keep it in the notes for reference:
 More on IP tables at:
 - [iptables Demystified - Port Redirection and Forwarding HTTP Traffic to another machine (part 1) - YouTube](https://www.youtube.com/watch?v=NAdJojxENEU)
 ### Steps
-Follow the steps in the [How To Capture Non-Proxy Aware Mobile Application Traffic (IOS & Android) Xamarin/Flutter -Pentesting | by salman syed | Medium](https://slmnsd552.medium.com/how-to-capture-non-proxy-aware-mobile-application-traffic-ios-android-xamarin-flutter-924fe044facf) blog to set up OpenVPN.
-1. Delete all `iptable` rules, refer to [iptables(8) - Linux man page (die.net)](https://linux.die.net/man/8/iptables) for full context.
+1. Follow the steps in the [How To Capture Non-Proxy Aware Mobile Application Traffic (IOS & Android) Xamarin/Flutter -Pentesting | by salman syed | Medium](https://slmnsd552.medium.com/how-to-capture-non-proxy-aware-mobile-application-traffic-ios-android-xamarin-flutter-924fe044facf) blog to set up OpenVPN.
+
+2. Delete all `iptable` rules, refer to [iptables(8) - Linux man page (die.net)](https://linux.die.net/man/8/iptables) for full context.
 ```bash
 # Flush filter rules i.e: FOWARD, INPUT, OUTPUT
 iptables -F
@@ -26,7 +27,7 @@ sudo iptables -P INPUT ACCEPT
 sudo iptables -P OUTPUT ACCEPT
 sudo iptables -P FORWARD ACCEPT
 ```
-2. Route traffic from your VPN interface and redirect to your host (Burp Suite)
+3. Route traffic from your VPN interface and redirect to your host (Burp Suite)
 ```bash
 # To forward to local port 8888 
 iptables -t nat -A PREROUTING -i tun0 -p tcp --dport 443 -j REDIRECT --to-port 8888 
@@ -39,7 +40,7 @@ iptables -t nat -A POSTROUTING -p tcp --dport <burp_listenting_port> -d <burp_ho
 # [optional] if you delete OpenVPN's NATing rule by accident, restore it with
 sudo iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o ens33 -j MASQUERADE # , where ens33 is the interface connected to the internet
 ```
-3. Enable IP Forwarding
+4. Enable IP Forwarding
 ```bash
 # Enable
 sysctl -w net.ipv4.ip_forward=1

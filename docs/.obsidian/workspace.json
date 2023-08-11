@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "iOS Application Testing/Frida Setup.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "70c96c0564271f45",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "iOS Application Testing/Xamarin.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -155,10 +168,11 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "58d77371a62668a3",
+  "active": "70c96c0564271f45",
   "lastOpenFiles": [
-    "iOS Application Testing/My Setup.md",
+    "iOS Application Testing/Burp Suite Setup.md",
     "iOS Application Testing/Xamarin.md",
+    "iOS Application Testing/My Setup.md",
     "Screenshots/Pasted image 20230804155907.png",
     "Screenshots/Pasted image 20230804155700.png",
     "Screenshots/Pasted image 20230804155041.png",
@@ -166,7 +180,6 @@
     "iOS Application Testing/Tweaks.md",
     "iOS Application Testing/Connect to Shell Over USB.md",
     "iOS Application Testing/Extract IPA From AppStore Application.md",
-    "iOS Application Testing/Burp Suite Setup.md",
     "Screenshots/Pasted image 20230804150922.png",
     "Screenshots/Pasted image 20230804150855.png",
     "iOS Application Testing/Frida Setup.md",
