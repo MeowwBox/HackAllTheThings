@@ -9,6 +9,7 @@ https://ryleyangus.com/repo
 
 ## SSL Pinning Bypass
 - SSL Kill Switch 2
+- [Releases · jjolano/shadow (github.com)](https://github.com/jjolano/shadow)
 
 ## Jailbreak detection bypass
 - A-Bypass

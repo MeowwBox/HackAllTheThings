@@ -18,6 +18,7 @@ cd F6CB934B-C989-4FB3-BD08-58F339BEF448
 ldid -S DVIA-v2.app
 ```
 ## Install Fake IPAs
+Refer to: [Setting Up iPhone 8 — iOS 16.2— for testing: palera1n, Sileo, Burp, Frida, Objection ,and more [2023] (akenofu.me)](https://blog.akenofu.me/setting-up-iphone-8-ios-16-for-pen-testing-ios-apps-2023/)
 1. Inside, Sileo add `https://cydia.akemi.ai/` as source.
 2. From the new packages install appinst and appsync Unified
 3. Inside an SSH shell `appinst /var/root/<application_name>.ipa`

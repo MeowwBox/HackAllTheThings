@@ -25,6 +25,10 @@ C:\Users\Karim\AppData\Local\Android\Sdk\emulator\emulator.exe -list-avds
 C:\Users\Karim\AppData\Local\Android\Sdk\emulator\emulator.exe -avd 'Pixel_3a_XL_API_28'  -http-proxy 127.0.0.1:8080 -writable-system
 ```
 
+Alternatively, if the device requires Google Play services:
+1. Root an Android build with Google Play services using [GitHub - newbit1/rootAVD: Script to root AVDs running with QEMU Emulator from Android Studio](https://github.com/newbit1/rootAVD)
+2. Follow the same steps described above, but don't use the `-writable-system` flag when starting the device.
+
 ### Intercept Traffic using tooling
 - Use [ProxyDroid – Apps on Google Play](https://play.google.com/store/apps/details?id=org.proxydroid&hl=en_GB&gl=US) and Burp NoPE
 - [Intercepting Non-HTTP Request Using Burp Suite + Extension (NoPE Proxy) | by #Ujan | Medium](https://medium.com/@juan.tirtayana/intercepting-non-http-request-using-burp-suite-extension-8c264b3c41d1)

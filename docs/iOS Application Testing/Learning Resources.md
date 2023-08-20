@@ -18,6 +18,5 @@
 [GitHub - oversecured/OversecuredVulnerableiOSApp: Oversecured Vulnerable iOS App](https://github.com/oversecured/OversecuredVulnerableiOSApp)
 
 ## pwn
-[How to Reverse Engineer and Patch an iOS Application for Beginners: Part I (inversecos.com)](https://www.inversecos.com/2022/06/how-to-reverse-engineer-and-patch-ios.html)
-[Guide to Reversing and Exploiting iOS binaries Part 2: ARM64 ROP Chains (inversecos.com)](https://www.inversecos.com/2022/06/guide-to-reversing-and-exploiting-ios.html)
-[Guide to Reversing and Exploiting iOS binaries Part 2: ARM64 ROP Chains (inversecos.com)](https://www.inversecos.com/2022/06/guide-to-reversing-and-exploiting-ios.html)
+- [How to Reverse Engineer and Patch an iOS Application for Beginners: Part I (inversecos.com)](https://www.inversecos.com/2022/06/how-to-reverse-engineer-and-patch-ios.html)
+- [Guide to Reversing and Exploiting iOS binaries Part 2: ARM64 ROP Chains (inversecos.com)](https://www.inversecos.com/2022/06/guide-to-reversing-and-exploiting-ios.html)
