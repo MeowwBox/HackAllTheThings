@@ -1,6 +1,7 @@
 # Frida Setup
 ## Install
 ### Download Frida-Server
+> To identify the system architecture, and correct friend version to download, use `uname -a` inside the mobile device's SSH terminal.
 #### For rootless Jailbreaks, 
 Download `frida_16.0.8_iphoneos-arm.deb` from [miticollo.github.io/repos/my/debs/frida at main · miticollo/miticollo.github.io · GitHub](https://github.com/miticollo/miticollo.github.io/tree/main/repos/my/debs/frida), or [Build frida-server binary for rootless Jailbroken devices from scratch](https://gist.github.com/miticollo/6e65b59d83b17bacc00523a0f9d41c11#xcode).
 

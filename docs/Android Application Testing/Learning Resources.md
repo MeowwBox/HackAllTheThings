@@ -7,3 +7,5 @@
 ## Vulnerable Apps
 - [GitHub - oversecured/ovaa: Oversecured Vulnerable Android App](https://github.com/oversecured/ovaa)
 - [GitHub - t0thkr1s/allsafe: Intentionally vulnerable Android application.](https://github.com/t0thkr1s/allsafe)
+## Videos
+- [Intercepting Android App Traffic with BurpSuite - YouTube](https://www.youtube.com/watch?v=xp8ufidc514&ab_channel=IppSec)

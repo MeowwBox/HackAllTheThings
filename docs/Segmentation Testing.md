@@ -49,7 +49,7 @@ sudo ./masscan 10.1.4.0/25 --rate 100000 -p 0-65535 --banners -oL $ip-to-pci_10.
 If you encounter an `open|filtered` port. Use netcat to connect to the port
 `nc 10.130.31.24 3130`
 
-> Checkout [[Network Pen test/Port Scan#Manual Firewall Enumeration]] for more how to manually enumerate the firewall using wireshark and netcat.
+> Checkout [[Infrastructure Pen test/Port Scan#Manual Firewall Enumeration]] for more how to manually enumerate the firewall using wireshark and netcat.
 
 ## Deciding out-of scope
 Remember that improper scoping (deciding something is out of scope without proper verification) can put a business at risk. To be effective, scoping and segmentation require careful planning, design, implementation, and monitoring. Many compromises have occurred via systems and networks incorrectly determined to be out of scope, where the breached entity placed false reliance on segmentation, only to find out after the breach that those controls were not effectively protecting its networks. It is therefore critical that entities focus on the security of their entire environment rather than solely on what is required by PCI DSS in order to minimize the risks to their organizations

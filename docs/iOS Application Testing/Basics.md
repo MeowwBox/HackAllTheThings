@@ -26,6 +26,11 @@ Refer to: [Setting Up iPhone 8 — iOS 16.2— for testing: palera1n, Sileo, Bur
 **Alternatively,**
 - Use [Sideloadly - iOS & Apple Silicon Sideloading](https://sideloadly.io/)
 
+Alternatively,
+- Download TrollStore helper using Sileo
+- Use TrollStore to intall the app
+From: [An bug in the ElleKit code injection framework causes AppSync Unified to not work correctly on some jailbreak environments (※ Dopamine, palera1n-c in `-l` rootless mode, etc.) in certain configurations · Issue #174 · akemin-dayo/AppSync · GitHub](https://github.com/akemin-dayo/AppSync/issues/174)
+
 ## Get Device UDID
 1.  Open up the latest version of [**iTunes**](http://www.apple.com/itunes/) and **connect your iOS device to your computer.**
 2.  **Select your iOS device** by clicking the device’s image located at the upper-left corner of iTunes’s UI.

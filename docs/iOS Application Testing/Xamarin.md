@@ -1,41 +1,40 @@
 # Xamarin
+## Hooking
+- [A brief on AOT Compiled iOS Xamarin Apps - Hacking Xamarin Apps on iOS (appknox.com)](https://www.appknox.com/security/hacking-xamarin-apps-on-ios)
+- [Notes From Reverse Engineering A Mono AOT Compiled App On iOS | Rafael Rivera (withinrafael.com)](https://withinrafael.com/2019/07/09/notes-from-reverse-engineering-a-mono-aot-compiled-app-on-ios/)
 ## Traffic Interception
 ### Resources
 - [Intercepting Xamarin Mobile App Traffic (triskelelabs.com)](https://www.triskelelabs.com/blog/intercepting-xamarin-mobile-app-traffic-2#:~:text=For%20an%20attacker%20to%20intercept,settings%20to%20use%20this%20proxy.) **(Recommended)**
 - [Capturing HTTP Requests from a non-proxy-aware Mobile Application | bhavukjain1](https://bhavukjain.com/blog/2023/02/19/capturing-requests-non-proxy-aware-application)
 - [SSL Pinning Bypass for Android & iPhone Users | Appknox](https://www.appknox.com/blog/bypass-ssl-pinning-in-ios-app)
+
 The following is outdated, but I opted to keep it in the notes for reference:
 - [How To Capture Non-Proxy Aware Mobile Application Traffic (IOS & Android) Xamarin/Flutter -Pentesting | by salman syed | Medium](https://slmnsd552.medium.com/how-to-capture-non-proxy-aware-mobile-application-traffic-ios-android-xamarin-flutter-924fe044facf)
 More on IP tables at:
 - [iptables Demystified - Port Redirection and Forwarding HTTP Traffic to another machine (part 1) - YouTube](https://www.youtube.com/watch?v=NAdJojxENEU)
 ### Steps
 1. Follow the steps in the [How To Capture Non-Proxy Aware Mobile Application Traffic (IOS & Android) Xamarin/Flutter -Pentesting | by salman syed | Medium](https://slmnsd552.medium.com/how-to-capture-non-proxy-aware-mobile-application-traffic-ios-android-xamarin-flutter-924fe044facf) blog to set up OpenVPN.
-
-2. Delete all `iptable` rules, refer to [iptables(8) - Linux man page (die.net)](https://linux.die.net/man/8/iptables) for full context.
+> Ensure OpenVPN is set to use TCP
+3. Delete all `iptable` rules, refer to [iptables(8) - Linux man page (die.net)](https://linux.die.net/man/8/iptables) for full context.
 ```bash
 # Flush filter rules i.e: FOWARD, INPUT, OUTPUT
 iptables -F
+
+# Allow all inbound traffic
+sudo iptables -P INPUT ACCEPT
+sudo iptables -P OUTPUT ACCEPT
+sudo iptables -P FORWARD ACCEPT
 
 # [optional] Get NAT rule number
 sudo iptables -t nat -v -L -n --line-number
 
 # [optional] Flush nat rule i.e: PREROUTING, POSTROUTING
 sudo iptables -t nat -D PREROUTING <rule_number>
-
-# Allow all inbound traffic
-sudo iptables -P INPUT ACCEPT
-sudo iptables -P OUTPUT ACCEPT
-sudo iptables -P FORWARD ACCEPT
 ```
 3. Route traffic from your VPN interface and redirect to your host (Burp Suite)
 ```bash
 # To forward to local port 8888 
 iptables -t nat -A PREROUTING -i tun0 -p tcp --dport 443 -j REDIRECT --to-port 8888 
-
-# ----- or to forward to a remte host -------
-iptables -t nat -A PREROUTING -p tcp --dport 443 -s <mobile_ip> -j DNAT --to-destination <burp_host_ip>:<burp_listenting_port>
-
-iptables -t nat -A POSTROUTING -p tcp --dport <burp_listenting_port> -d <burp_host_ip> -j SNAT --to-source <burp_host_ip>
 
 # [optional] if you delete OpenVPN's NATing rule by accident, restore it with
 sudo iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o ens33 -j MASQUERADE # , where ens33 is the interface connected to the internet
@@ -45,7 +44,7 @@ sudo iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o ens33 -j MASQUERADE # , wh
 # Enable
 sysctl -w net.ipv4.ip_forward=1
 
-# Validate it works
+# [optional] Validate it works
 cat /proc/sys/net/ipv4/ip_forward
 ```
 > If you don't see traffic in Burp, checkout Burp's Dashboard - sometimes it's an SSL pinning issue.

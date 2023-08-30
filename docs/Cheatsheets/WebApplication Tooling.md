@@ -33,9 +33,9 @@ bfac -u https://102.128.176.162/ -xsc 401
 
 
 ## Tooling
-[X8](https://github.com/Sh1Yo/x8/)
-[bfac](https://github.com/mazen160/bfac)
-[feroxbuster](https://github.com/epi052/feroxbuster)
-[gobuster](https://github.com/OJ/gobuster)
-[ffuf](https://github.com/ffuf/ffuf)
+- [X8](https://github.com/Sh1Yo/x8/)
+- [bfac](https://github.com/mazen160/bfac)
+- [feroxbuster](https://github.com/epi052/feroxbuster)
+- [gobuster](https://github.com/OJ/gobuster)
+- [ffuf](https://github.com/ffuf/ffuf)
 

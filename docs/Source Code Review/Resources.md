@@ -1,6 +1,9 @@
 ## Courses
 - [Offensive Security - OSWE](https://www.offensive-security.com/awae-oswe/)
 
+## Blogs
+- [On Command Injection over Java’s ProcessBuilder | by CodeThreat | CodeX | Medium](https://medium.com/codex/on-command-injection-over-javas-processbuilder-8d9f833c808c)
+- [Security Code Review 101 (owasp.org)](https://owasp.org/SecureCodingDojo/codereview101/)
 ## Vulnerable Practice Machines
 - [Chat.JS - Vulnerable NodeJS Web-App to practice NoSQLi and Deserialization exploitation](https://github.com/bmdyy/chat.js#chatjs-vulnerable-nodejs-web-app
 - [TESTR - Vulnerable Python Web-App to practice XSS and Command Injection](https://github.com/bmdyy/testr)

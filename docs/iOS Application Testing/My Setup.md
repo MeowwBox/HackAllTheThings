@@ -10,5 +10,6 @@ iPhone 8, iOS 16.2 refurbished from amazon. Jailbreak done using a Debian host.
 
 
 ## Misc
+- Do not set a passcode on the device
 - Disable auto locking the screen
 - Disable click sounds

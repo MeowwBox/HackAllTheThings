@@ -1,7 +1,7 @@
 
 # Threat Modeling
 Based on:
-
+- [Threat Modelling Cloud Platform Services by Example: Google Cloud Storage | NCC Group Research Blog | Making the world safer and more secure](https://research.nccgroup.com/2023/01/31/threat-modelling-cloud-platform-services-by-example-google-cloud-storage/) (Recommended)
 - [Threat Modeling Security Fundamentals - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/tm-threat-modeling-fundamentals/)
 - [Blog - Analysing vulnerabilities with threat modelling using diagrams.net](https://www.diagrams.net/blog/threat-modelling)
 - [TON_ThreatModeling_1612.pdf (toreon.com)](https://www.toreon.com/wp-content/uploads/2016/12/TON_ThreatModeling_1612.pdf)

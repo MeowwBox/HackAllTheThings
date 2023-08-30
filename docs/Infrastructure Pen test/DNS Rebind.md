@@ -12,4 +12,4 @@ Command
 /opt/FakeDns/fakedns.py -c fakedns.conf 
 ```
 
-[Crypt0s/FakeDns: A regular-expression based python MITM DNS server with support for DNS Rebinding attacks (github.com)](https://github.com/Crypt0s/FakeDns)
+- [Crypt0s/FakeDns: A regular-expression based python MITM DNS server with support for DNS Rebinding attacks (github.com)](https://github.com/Crypt0s/FakeDns)

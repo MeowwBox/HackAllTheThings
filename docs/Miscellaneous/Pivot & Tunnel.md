@@ -92,7 +92,7 @@ A [Tailscale network (tailnet)](https://tailscale.com/kb/1136/tailnet/) is pri
 
 ---
 # SShuttle
-To use sshuttle with JumpHost make sure the `~/.ssh/config` is configured correctly. Checkout [[Network Pen test/SSH (22)#Config File Sample for jumphost]]
+To use sshuttle with JumpHost make sure the `~/.ssh/config` is configured correctly. Checkout [[Infrastructure Pen test/SSH (22)#Config File Sample for jumphost]]
 ```bash
 # sshuttle
 sudo sshuttle -v -r ubuntu 10.1.4.0/24 

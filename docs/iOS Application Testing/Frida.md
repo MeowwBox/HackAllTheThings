@@ -15,3 +15,8 @@ var targetAddress = moduleBase.add(addr);
         },
     });
 ```
+
+## Resources
+- [Frida-Trace iOS (trelis24.github.io)](https://trelis24.github.io/2019/08/09/Frida-iOS/)
+- [Frida Trace (frida-trace) - iOS Pentesting (pentestglobal.com)](https://ios.pentestglobal.com/frida/frida-trace-frida-trace)
+- [iOS Hooking With Objection - HackTricks](https://book.hacktricks.xyz/mobile-pentesting/ios-pentesting/ios-hooking-with-objection)

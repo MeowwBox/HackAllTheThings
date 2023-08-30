@@ -7,6 +7,8 @@ OnePlus 6
 OnePlus7t
 
 #### Frida Server version
+> To identify the system architecture, and correct friend version to download, use `uname -a` inside the mobile device's SSH terminal.
+
 Android-Arm64
 
 #### Rooting Guides
