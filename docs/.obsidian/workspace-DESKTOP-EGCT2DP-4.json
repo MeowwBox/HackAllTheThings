@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Android Application Testing/Frida.md",
+                "file": "Miscellaneous/Tunneling.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "frida",
+                "query": "tunnel",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Android Application Testing/Frida.md",
+                "file": "Miscellaneous/Tunneling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android Application Testing/Frida.md"
+                "file": "Miscellaneous/Tunneling.md"
               }
             }
           },
@@ -155,23 +155,16 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "1fe99213467ed1d6",
+  "active": "81784cab3b37ff5b",
   "lastOpenFiles": [
-    "Android Application Testing/archived.7z",
-    "Android Application Testing/Xamarin.md",
-    "iOS Application Testing/Frida.md",
-    "Android Application Testing/Apache Cordova.md",
-    "Time-of-check-to-time-of-use.md",
-    "Miscellaneous/mTLS.md",
-    "Web Applications testing/Untitled.md",
-    "Screenshots/Pasted image 20230905160150.png",
-    "Screenshots/Pasted image 20230905160139.png",
-    "About me.md",
-    "Android Application Testing/Frida.md",
     "Linux/Miscellaneous.md",
+    "Miscellaneous/Tunneling.md",
+    "Android Application Testing/Frida.md",
     "Infrastructure Pen test/Fundamentals.md",
+    "Android Application Testing/Xamarin.md",
     "Android Application Testing/Smali.md",
     "Android Application Testing/My Testing Enviroment.md",
+    "Android Application Testing/Apache Cordova.md",
     "Android Application Testing/Flutter.md",
     "Android Application Testing/Learning Resources.md",
     "Risk & Severity Assessment/CVSS 3.1.md",
@@ -185,6 +178,11 @@
     "Cloud/Terraform Assessment.md",
     "Cloud/GCP Assessement.md",
     "Cloud/Azure AD Assessment.md",
+    "Cheatsheets/WebApplication Tooling.md",
+    "Active Directory Assessment/Checklist.md",
+    "Active Directory Assessment/Delegation.md",
+    "Active Directory Assessment/DNS Exfiltration.md",
+    "Active Directory Assessment/Fundamentals.md",
     "Screenshots/Pasted image 20230829095441.png",
     "Infrastructure Pen test",
     "Screenshots/Pasted image 20230804155907.png",
@@ -194,6 +192,8 @@
     "Screenshots/Pasted image 20230804150922.png",
     "Screenshots/Pasted image 20230804150855.png",
     "Screenshots/Pasted image 20230803164141.png",
+    "Screenshots/Pasted image 20230608141442.png",
+    "Screenshots/Pasted image 20230608130242.png",
     "Untitled.canvas",
     "Risk & Severity Assessment"
   ]

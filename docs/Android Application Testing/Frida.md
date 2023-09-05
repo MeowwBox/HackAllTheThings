@@ -211,7 +211,37 @@ else {
 
 }
 ```
-# Tools built on top of frida
+
+
+## Spoof function call if it matches a class name
+```js
+Java.perform(function() {
+    let RichClientUtilitiesImpl = Java.use("fake.bank.data.richclient.RichClientUtilitiesImpl");
+    let ValidatePinClass = Java.use("fake.bank.data.richclient.domainservice.ValidatePin$Request")
+    RichClientUtilitiesImpl["encryptAndSignPayload"].implementation = function (t, iv, sessionKey, keyStoreAlias, requestClass, tuples) {
+    console.log(ValidatePinClass.$className == t.$className)
+    if(t.$className == ValidatePinClass.$className)
+    {
+        t = ValidatePinClass.$new('1337', '14142c7b-5134-1456-758c-268ca60dafd5', 'yQY3z300uLRC7fTW0=')
+        console.log("Spoofed!")
+    }
+    console.log(`RichClientUtilitiesImpl.encryptAndSignPayload is called: t=${t}, iv=${iv}, sessionKey=${sessionKey}, keyStoreAlias=${keyStoreAlias}, requestClass=${requestClass}, tuples=${tuples}`);
+    let result = this["encryptAndSignPayload"](t, iv, sessionKey, keyStoreAlias, requestClass, tuples);
+    return result;
+};
+
+
+let RichClientProfile = Java.use("fake.bank.data.richclient.model.RichClientProfile");
+RichClientProfile["getDeviceID"].implementation = function () {
+    let result = this["getDeviceID"]();
+    let spoofedResult =  '9069ac10-4214-4fbd-1514-9a3c6c1d1242'
+    // console.log(`RichClientProfile.getDeviceID result=${result}`);
+    return result;
+};
+
+});
+```
+# Tools built on top of Frida
 - Objection
 - [GitHub - Ch0pin/medusa: Binary instrumentation framework based on FRIDA](https://github.com/Ch0pin/medusa)
 # Resources
