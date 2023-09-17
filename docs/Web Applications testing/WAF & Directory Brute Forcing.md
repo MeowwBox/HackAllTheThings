@@ -37,7 +37,7 @@ A combination of the following could potenially help bypass a WAF when directory
 - Limit the number of requests sent concurrently
 
 References:
-[Prevent brute force attacks with AWS WAF (amazon.com)](https://aws.amazon.com/premiumsupport/knowledge-center/waf-prevent-brute-force-attacks/)
+- [Prevent brute force attacks with AWS WAF (amazon.com)](https://aws.amazon.com/premiumsupport/knowledge-center/waf-prevent-brute-force-attacks/)
 
 ## Wordlists
 - [trickest/wordlists: Real-world infosec wordlists, updated regularly (github.com)](https://github.com/trickest/wordlists)

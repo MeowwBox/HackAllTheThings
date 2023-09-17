@@ -17,11 +17,11 @@
 	```
 	Reference: [apex:outputText escape="false“ keyword by passing Security ? - Salesforce Developer Community](https://developer.salesforce.com/forums/?id=9062I000000IRXaQAO)
 - [ ] Check if developer console is accessible
-	```http
-	https://<domain>.my.salesforce.com/_ui/common/apex/debug/ApexCSIPage
-	```
-	
-	 - [ ] Abuse `search in files` functionality to leak source code, passwords, tokens, etc.
+```http
+https://<domain>.my.salesforce.com/_ui/common/apex/debug/ApexCSIPage
+```
+
+- [ ] Abuse `search in files` functionality to leak source code, passwords, tokens, etc.
 	- [ ] SOQL Queries to leak data that might not be accessible and protected by Apex classes sharing permissions.
 
 
@@ -44,11 +44,7 @@ Salesforce lightning with guest privilege. (github.com)](https://github.com/moni
 
 ## Interesting reads
 [VF Remoting Exploit - Salesforce Developer Community](https://developer.salesforce.com/forums/?id=9062I000000XvqIQAS)
-```
-
 ## Burp Extensions
 - [GitHub - akenofu/lightning-burp](https://github.com/akenofu/lightning-burp)
-
-
 ## Tips and tricks
 - Look at the security settings page
