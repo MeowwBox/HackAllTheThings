@@ -25,14 +25,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IAM, AuthN & AuthZ.md",
+                "file": "Web Applications testing/Mitigations & Compensating Controls/Same Site Cookies.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "951140f42a227f42",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.13"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "20230828205850.png",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +116,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "IAM, AuthN & AuthZ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "IAM, AuthN & AuthZ.md"
-              }
+              "state": {}
             }
           },
           {
@@ -178,12 +185,13 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "a4e3619e58bbe8bd",
+  "active": "951140f42a227f42",
   "lastOpenFiles": [
+    "Screenshots/Pasted image 20230828205850.png.md",
+    "IAM, AuthN & AuthZ.md",
     "Web Applications testing/WAF & Directory Brute Forcing.md",
     "Web Applications testing/Salesforce Testing.md",
     "IAM.md",
-    "IAM, AuthN & AuthZ.md",
     "Miscellaneous/mTLS.md",
     "Time-of-check-to-time-of-use.md",
     "Web Applications testing/Untitled.md",
@@ -207,7 +215,6 @@
     "IoT Testing/Firmware.md",
     "Cloud/Platform Agnostic Testing.md",
     "Cloud/Kubernetes Assessment.md",
-    "Cloud/Terraform Assessment.md",
     "Screenshots/Pasted image 20230829095441.png",
     "Infrastructure Pen test",
     "Screenshots/Pasted image 20230804155907.png",
