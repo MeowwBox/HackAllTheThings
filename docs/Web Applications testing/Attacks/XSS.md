@@ -96,3 +96,7 @@ function fetchUrl(url, wait){
 }
 </script> 
 ```
+
+
+## Write-ups
+- [Intigriti — XSS Challenge 0621. XSS via WebAssembly | by FHantke | InfoSec Write-ups (infosecwriteups.com)](https://infosecwriteups.com/intigriti-xss-challenge-0621-cf76c28840c1)

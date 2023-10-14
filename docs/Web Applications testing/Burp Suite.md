@@ -1,4 +1,8 @@
-# Burp Extensions
+# Burp Suite
+## Configuring Burp Scanner
+- [Configuring Burp Active Scan - (17) How to scan a website for vulnerabilities using Burp Scanner - YouTube](https://www.youtube.com/watch?v=VP9eQhUASYQ&t=740s&ab_channel=PortSwigger)
+- [(17) PortSwigginar: Burp Scanner for pentesters - March 2023 - YouTube](https://www.youtube.com/watch?v=mDYsmfeSxd8&ab_channel=PortSwigger)
+## Burp Extensions
 - [XSS Validator - PortSwigger](https://portswigger.net/bappstore/98275a25394a417c9480f58740c1d981)
 - [403 Bypasser - PortSwigger](https://portswigger.net/bappstore/444407b96d9c4de0adb7aed89e826122)
 - [Hackvertor - PortSwigger](https://portswigger.net/bappstore/65033cbd2c344fbabe57ac060b5dd100)

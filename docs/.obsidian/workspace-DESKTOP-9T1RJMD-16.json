@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "2d622083246732be",
+        "id": "d18266045f7b862a",
         "type": "tabs",
         "children": [
           {
-            "id": "3bba32072b00c805",
+            "id": "d79757b305c6956b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Server Administration/VPNS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e803a7655fda2da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Active Directory Assessment/Exchange.md",
-                "mode": "source",
+                "file": "Time-of-check-to-time-of-use.md",
+                "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -51,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTimeReverse"
+                "sortOrder": "alphabetical"
               }
             }
           },
@@ -61,8 +48,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "winshark",
-                "matchingCase": false,
+                "query": "",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -79,7 +66,7 @@
             }
           },
           {
-            "id": "32da94ec4e09ac2f",
+            "id": "bf716efbf61432b2",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory Assessment/Exchange.md",
+                "file": "Time-of-check-to-time-of-use.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,12 +110,35 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory Assessment/Exchange.md"
+                "file": "Time-of-check-to-time-of-use.md"
               }
             }
           },
           {
-            "id": "1076fd424885503e",
+            "id": "c5a6d7082afbc3a4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Web Applications/Attacks/SSL Certificate.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e55b3eac32bc62eb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "53d8a27a37e411be",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -146,44 +156,55 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "publish:Publish changes...": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "publish:Publish changes...": false
+      "markdown-importer:Open format converter": false
     }
   },
-  "active": "5e803a7655fda2da",
+  "active": "d79757b305c6956b",
   "lastOpenFiles": [
-    "Mail Security.md",
-    "Threat Modeling.md",
-    "Server Administration/VPNS.md",
-    "Web Applications testing/Attacks/Modern Web Bugs.md",
-    "Web Applications testing/Attacks/Web Servers/Head Smuggling.md",
-    "Web Applications testing/Attacks/Web Servers/Nginx.md",
-    "Research/HTTP Desync & Request Smuggling.md",
+    "Web Applications testing/Mitigations & Compensating Controls/Same Site Cookies.md",
+    "Miscellaneous/mTLS.md",
+    "IAM, AuthN & AuthZ.md",
+    "Web Applications testing/WAF & Directory Brute Forcing.md",
+    "Web Applications testing/Salesforce Testing.md",
+    "IAM.md",
+    "Time-of-check-to-time-of-use.md",
+    "Web Applications testing/Untitled.md",
+    "Screenshots/Pasted image 20230905160150.png",
+    "Screenshots/Pasted image 20230905160139.png",
+    "About me.md",
+    "Android Application Testing/Frida.md",
+    "Linux/Miscellaneous.md",
+    "Infrastructure Pen test/Fundamentals.md",
+    "Android Application Testing/Xamarin.md",
+    "Android Application Testing/Smali.md",
+    "Android Application Testing/My Testing Enviroment.md",
     "Android Application Testing/Apache Cordova.md",
-    "Research/Untitled",
-    "Research",
-    "Active Directory Assessment/Exchange.md",
-    "Databases/PSQL.md",
-    "Vulnerability Scanning.md",
-    "Web Applications testing/Burp Suite.md",
-    "Web Applications testing/Resources.md",
-    "Web Applications testing/Tips and Tricks.md",
-    "Web Applications testing/Attacks/XSS.md",
-    "Web Applications testing/Attacks/Write Ups.md",
-    "Web Applications/My Tooling.md",
-    "Miscellaneous/My Host Setup.md",
-    "Miscellaneous/Convert Debain to Kali.md",
-    "Desktop Application Security/C++ Win32.md",
-    "C2 Frameworks.md",
-    "Web Applications/Untitled.md",
-    "Web Applications/Resources.md",
-    "Miscellaneous/Convert VMWare VMs to Hyper V.md",
-    "Desktop Application Security/Tips and tricks.md",
-    "Desktop Application Security/Untitled.md"
+    "Android Application Testing/Flutter.md",
+    "Android Application Testing/Learning Resources.md",
+    "Risk & Severity Assessment/CVSS 3.1.md",
+    "Risk & Severity Assessment/DREAD.md",
+    "Risk & Severity Assessment/OWASP Shortcomings.md",
+    "Risk & Severity Assessment/OWASP Risk Rating.md",
+    "Risk & Severity Assessment/CVSS Shortcomings.md",
+    "IoT Testing/Firmware.md",
+    "Cloud/Platform Agnostic Testing.md",
+    "Cloud/Kubernetes Assessment.md",
+    "Screenshots/Pasted image 20230829095441.png",
+    "Infrastructure Pen test",
+    "Screenshots/Pasted image 20230804155907.png",
+    "Screenshots/Pasted image 20230804155700.png",
+    "Screenshots/Pasted image 20230804155041.png",
+    "Screenshots/Pasted image 20230804154920.png",
+    "Screenshots/Pasted image 20230804150922.png",
+    "Screenshots/Pasted image 20230804150855.png",
+    "Screenshots/Pasted image 20230803164141.png",
+    "Untitled.canvas",
+    "Risk & Severity Assessment"
   ]
 }

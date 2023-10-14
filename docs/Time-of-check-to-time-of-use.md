@@ -8,6 +8,7 @@
 ### HTTP 2 and Single-Packet Attacks
 - [A Beginner’s Guide to HTTP/2 and its Importance | by Madhavan Nagarajan | The Startup | Medium](https://medium.com/swlh/a-beginners-guide-to-http-2-and-its-importance-700f619bbfe7)
 - [Timeless Timing Attacks: Exploiting Concurrency to Leak Secrets over Remote Connections | USENIX](https://www.usenix.org/conference/usenixsecurity20/presentation/van-goethem)
+- [(5) DEF CON 31 - Smashing the State Machine the True Potential of Web Race Conditions - James Kettle - YouTube](https://www.youtube.com/watch?v=tKJzsaB1ZvI&ab_channel=DEFCONConference)
 ## Generic (Not Web)
 ### Learning Resources
 - [Recognizing and preventing TOCTOU vulnerabilities (nccgroup.com)](https://research.nccgroup.com/wp-content/uploads/2021/09/TOCTOU_whitepaper.pdf)
